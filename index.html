@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="sk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' https://telegram.org; style-src 'self'; img-src 'self' data:; connect-src 'none'; base-uri 'none'; form-action 'none'">
+<meta name="referrer" content="no-referrer">
+<title>Jarvis — odtlačok</title>
+<!-- Okno Jarvisa v Telegrame (v0.9.34, TELEGRAM_KANAL_NAVRH v2 §3a): kľúč P-256 vznikne v mobile, súkromná časť sa uloží
+     za odtlačok (Telegram BiometricManager), Jarvis dostane len verejný kľúč a podpisy výziev. Žiadna sieť (connect-src 'none'). -->
+<script src="https://telegram.org/js/telegram-web-app.js?64"></script>
+<link rel="stylesheet" href="app.css">
+</head>
+<body>
+<main>
+  <h1>Jarvis</h1>
+  <p id="what">Načítavam…</p>
+  <p id="detail"></p>
+  <div class="actions">
+    <button id="go" type="button" hidden></button>
+    <button id="cancel" type="button" class="secondary" hidden>Zrušiť</button>
+  </div>
+  <p id="msg" role="status"></p>
+  <p class="small">Súkromný kľúč ostáva v zabezpečenom úložisku tohto mobilu za tvojím odtlačkom. Jarvis dostane len podpis jednorazovej výzvy.</p>
+</main>
+<script src="app.js"></script>
+</body>
+</html>

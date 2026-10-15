@@ -1,0 +1,21 @@
+:root { color-scheme: light dark; }
+body {
+  margin: 0;
+  font: 16px/1.45 -apple-system, system-ui, "Segoe UI", Roboto, sans-serif;
+  background: var(--tg-theme-bg-color, #ffffff);
+  color: var(--tg-theme-text-color, #111111);
+}
+main { max-width: 480px; margin: 0 auto; padding: 24px 16px 32px; }
+h1 { font-size: 20px; margin: 0 0 12px; }
+#what { font-weight: 600; }
+#detail { color: var(--tg-theme-hint-color, #666666); word-break: break-word; }
+.actions { display: flex; gap: 12px; margin: 24px 0 12px; }
+button {
+  flex: 1; min-height: 48px; border: 0; border-radius: 10px; font-size: 16px; font-weight: 600;
+  background: var(--tg-theme-button-color, #2481cc); color: var(--tg-theme-button-text-color, #ffffff);
+}
+button.secondary { background: var(--tg-theme-secondary-bg-color, #e9eef2); color: var(--tg-theme-text-color, #111111); }
+button:disabled { opacity: .5; }
+#msg.bad { color: #d64545; }
+#msg.ok { color: var(--tg-theme-hint-color, #666666); }
+.small { font-size: 13px; color: var(--tg-theme-hint-color, #666666); }
